@@ -19,6 +19,6 @@ public class PostmanEchoTest {
                 .post("/post")                              // POST-запрос
                 .then()
                 .statusCode(200)                            // проверка статуса
-                .body("data", equalTo("WRONG_VALUE"));  // Заведомо неверное значение
+                .body("data", equalTo("some data"));        // проверка тела (JSONPath)
     }
 }
